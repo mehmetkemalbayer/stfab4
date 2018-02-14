@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfh-kd-X8p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stfab4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +28,186 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Kullanıcı Girişi-->
+        <scene sceneID="8lQ-79-V8l">
+            <objects>
+                <viewController storyboardIdentifier="MemberLogin" title="Kullanıcı Girişi" id="imp-Ft-8TZ" customClass="MemberLoginViewController" customModule="stfab4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbR-E4-ZQA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı adınızı giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLb-iY-IKf">
+                                <rect key="frame" x="16" y="209" width="375" height="38"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btL-BU-JFr">
+                                <rect key="frame" x="16" y="279" width="375" height="38"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxE-J4-dmy">
+                                <rect key="frame" x="16" y="349" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="I9w-RD-cPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="44"/>
+                                <state key="normal" title="Giriş"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="imp-Ft-8TZ" eventType="touchUpInside" id="FqK-jD-4xE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="btL-BU-JFr" firstAttribute="leading" secondItem="ffH-83-hpL" secondAttribute="leading" constant="16" id="1DJ-UL-SQ3"/>
+                            <constraint firstItem="JLb-iY-IKf" firstAttribute="top" secondItem="ffH-83-hpL" secondAttribute="top" constant="189" id="5WX-vy-ZsA"/>
+                            <constraint firstItem="JxE-J4-dmy" firstAttribute="leading" secondItem="ffH-83-hpL" secondAttribute="leading" constant="16" id="6qu-zv-1y2"/>
+                            <constraint firstItem="btL-BU-JFr" firstAttribute="top" secondItem="JLb-iY-IKf" secondAttribute="bottom" constant="32" id="V96-Da-f9u"/>
+                            <constraint firstItem="JLb-iY-IKf" firstAttribute="leading" secondItem="ffH-83-hpL" secondAttribute="leading" constant="16" id="cex-Qb-Be3"/>
+                            <constraint firstItem="JxE-J4-dmy" firstAttribute="top" secondItem="btL-BU-JFr" secondAttribute="bottom" constant="32" id="oU3-Gk-faJ"/>
+                            <constraint firstItem="btL-BU-JFr" firstAttribute="trailing" secondItem="ffH-83-hpL" secondAttribute="trailing" constant="16" id="olu-HL-NqI"/>
+                            <constraint firstItem="JLb-iY-IKf" firstAttribute="trailing" secondItem="ffH-83-hpL" secondAttribute="trailing" constant="16" id="sxN-fL-td7"/>
+                            <constraint firstItem="ffH-83-hpL" firstAttribute="trailing" secondItem="JxE-J4-dmy" secondAttribute="trailing" constant="16" id="xn9-rQ-iic"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ffH-83-hpL"/>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="btL-BU-JFr" id="8p2-KM-rLT"/>
+                        <outlet property="userName" destination="JLb-iY-IKf" id="HYl-Ma-Wtm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zqh-CC-yXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="124.58770614692655"/>
+        </scene>
+        <!--Site Sakinleri-->
+        <scene sceneID="o4O-IH-YUd">
+            <objects>
+                <tableViewController id="6gp-9E-6g5" customClass="MembersTableViewController" customModule="stfab4" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ysl-GV-Tjy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jxj-gA-cVp">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jxj-gA-cVp" id="gOe-Lz-K43">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6gp-9E-6g5" id="p7a-5L-R3K"/>
+                            <outlet property="delegate" destination="6gp-9E-6g5" id="yI1-U5-zZL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Site Sakinleri" id="f8O-zb-g33"/>
+                    <connections>
+                        <segue destination="OO4-uX-XJc" kind="show" identifier="MemberDetailSegue" id="FcX-Ml-yPb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCP-Wm-BKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="124"/>
+        </scene>
+        <!--Member Detail View Controller-->
+        <scene sceneID="rSB-ul-8c1">
+            <objects>
+                <viewController id="OO4-uX-XJc" customClass="MemberDetailViewController" customModule="stfab4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmn-PM-jA4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mehmet Kemal Bayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFv-6f-csU">
+                                <rect key="frame" x="8" y="80" width="359" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="saw-r0-zKA">
+                                <rect key="frame" x="8" y="154" width="359" height="362"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Araç Listesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIU-p3-WFQ">
+                                <rect key="frame" x="8" y="122" width="359" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.1113604978" green="0.25013518330000001" blue="0.31277737020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Uy-M6-EMr">
+                                <rect key="frame" x="8" y="604" width="359" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Tarihçe">
+                                    <color key="titleColor" red="0.17753347750000001" green="0.33596932889999997" blue="0.42354434730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwr-Eo-rlp">
+                                <rect key="frame" x="8" y="524" width="359" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Araç Ekle">
+                                    <color key="titleColor" red="0.17753347750000001" green="0.33596932889999997" blue="0.42354434730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77117210629999999" green="0.8199142814" blue="0.81596326829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.48150002959999999" green="0.50972205400000004" blue="0.52228403089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zFv-6f-csU" firstAttribute="leading" secondItem="fMT-lz-9tv" secondAttribute="leading" constant="8" id="5Dw-Ga-9Uw"/>
+                            <constraint firstItem="NIU-p3-WFQ" firstAttribute="leading" secondItem="fMT-lz-9tv" secondAttribute="leading" constant="8" id="6uW-VI-lQP"/>
+                            <constraint firstItem="NIU-p3-WFQ" firstAttribute="top" secondItem="zFv-6f-csU" secondAttribute="bottom" constant="16" id="9lJ-QK-vYO"/>
+                            <constraint firstItem="fMT-lz-9tv" firstAttribute="trailing" secondItem="Nwr-Eo-rlp" secondAttribute="trailing" constant="8" id="BQ8-oi-EYe"/>
+                            <constraint firstItem="saw-r0-zKA" firstAttribute="leading" secondItem="fMT-lz-9tv" secondAttribute="leading" constant="8" id="Bt4-rW-nTy"/>
+                            <constraint firstItem="3Uy-M6-EMr" firstAttribute="leading" secondItem="fMT-lz-9tv" secondAttribute="leading" constant="8" id="H89-CB-aeB"/>
+                            <constraint firstItem="fMT-lz-9tv" firstAttribute="trailing" secondItem="zFv-6f-csU" secondAttribute="trailing" constant="8" id="Hfw-cH-Whx"/>
+                            <constraint firstItem="zFv-6f-csU" firstAttribute="top" secondItem="fMT-lz-9tv" secondAttribute="top" constant="16" id="KEI-kX-Try"/>
+                            <constraint firstItem="Nwr-Eo-rlp" firstAttribute="leading" secondItem="fMT-lz-9tv" secondAttribute="leading" constant="8" id="Qhg-fw-1Ob"/>
+                            <constraint firstItem="Nwr-Eo-rlp" firstAttribute="top" secondItem="saw-r0-zKA" secondAttribute="bottom" constant="8" id="RZK-Bb-Nx7"/>
+                            <constraint firstItem="fMT-lz-9tv" firstAttribute="bottom" secondItem="3Uy-M6-EMr" secondAttribute="bottom" constant="16" id="TiL-jb-RrC"/>
+                            <constraint firstItem="fMT-lz-9tv" firstAttribute="trailing" secondItem="NIU-p3-WFQ" secondAttribute="trailing" constant="8" id="f9B-Hc-uqx"/>
+                            <constraint firstItem="fMT-lz-9tv" firstAttribute="trailing" secondItem="3Uy-M6-EMr" secondAttribute="trailing" constant="8" id="hN2-kT-5OL"/>
+                            <constraint firstItem="3Uy-M6-EMr" firstAttribute="top" secondItem="Nwr-Eo-rlp" secondAttribute="bottom" constant="32" id="it6-Pv-FPB"/>
+                            <constraint firstItem="fMT-lz-9tv" firstAttribute="trailing" secondItem="saw-r0-zKA" secondAttribute="trailing" constant="8" id="nDl-h8-aqi"/>
+                            <constraint firstItem="saw-r0-zKA" firstAttribute="top" secondItem="NIU-p3-WFQ" secondAttribute="bottom" constant="8" id="wrq-vS-lSi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fMT-lz-9tv"/>
+                    </view>
+                    <connections>
+                        <outlet property="memberName" destination="zFv-6f-csU" id="kQ2-5M-FXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oop-yJ-cfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3636" y="125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2yI-bk-ZPa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lfh-kd-X8p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ntq-Ff-Z0B">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.17753347750000001" green="0.33596932889999997" blue="0.42354434730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.77117210629999999" green="0.8199142814" blue="0.81596326829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.1113604978" green="0.25013518330000001" blue="0.31277737020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6gp-9E-6g5" kind="relationship" relationship="rootViewController" id="Bnr-2x-pKI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93D-Gq-WEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868.8" y="124.13793103448276"/>
         </scene>
     </scenes>
 </document>

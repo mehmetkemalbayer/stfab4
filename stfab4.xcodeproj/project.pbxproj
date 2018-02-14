@@ -12,6 +12,13 @@
 		49270359202F408F00C291A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49270357202F408F00C291A8 /* Main.storyboard */; };
 		4927035B202F408F00C291A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4927035A202F408F00C291A8 /* Assets.xcassets */; };
 		4927035E202F408F00C291A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4927035C202F408F00C291A8 /* LaunchScreen.storyboard */; };
+		49270369202F899A00C291A8 /* MembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49270367202F899A00C291A8 /* MembersTableViewCell.swift */; };
+		4927036A202F899A00C291A8 /* MembersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49270368202F899A00C291A8 /* MembersTableViewCell.xib */; };
+		4927036C202F8F0300C291A8 /* MemberLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927036B202F8F0300C291A8 /* MemberLoginViewController.swift */; };
+		4927036E20301D1B00C291A8 /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927036D20301D1A00C291A8 /* MembersTableViewController.swift */; };
+		496F74622034D81B001951CE /* MemberCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F74612034D81B001951CE /* MemberCellModel.swift */; };
+		496F74642034E3D2001951CE /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F74632034E3D2001951CE /* MemberDetailViewController.swift */; };
+		A7640D5A0DF91A3BBF49BF38 /* Pods_stfab4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8E547F7B07724F757A3C5 /* Pods_stfab4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		4927035A202F408F00C291A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4927035D202F408F00C291A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4927035F202F408F00C291A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49270367202F899A00C291A8 /* MembersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableViewCell.swift; sourceTree = "<group>"; };
+		49270368202F899A00C291A8 /* MembersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MembersTableViewCell.xib; sourceTree = "<group>"; };
+		4927036B202F8F0300C291A8 /* MemberLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginViewController.swift; sourceTree = "<group>"; };
+		4927036D20301D1A00C291A8 /* MembersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableViewController.swift; sourceTree = "<group>"; };
+		496F74612034D81B001951CE /* MemberCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCellModel.swift; sourceTree = "<group>"; };
+		496F74632034E3D2001951CE /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		4DD8E547F7B07724F757A3C5 /* Pods_stfab4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stfab4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8708DAFF15783E1B863257 /* Pods-stfab4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stfab4.release.xcconfig"; path = "Pods/Target Support Files/Pods-stfab4/Pods-stfab4.release.xcconfig"; sourceTree = "<group>"; };
+		719A56914FFF5A81E8D087C5 /* Pods-stfab4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stfab4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stfab4/Pods-stfab4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7640D5A0DF91A3BBF49BF38 /* Pods_stfab4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				49270352202F408F00C291A8 /* stfab4 */,
 				49270351202F408F00C291A8 /* Products */,
+				4DEB43A9AE3AE0F872DA5A68 /* Pods */,
+				7B1D75100E816B48F40C0231 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,31 @@
 				4927035A202F408F00C291A8 /* Assets.xcassets */,
 				4927035C202F408F00C291A8 /* LaunchScreen.storyboard */,
 				4927035F202F408F00C291A8 /* Info.plist */,
+				49270367202F899A00C291A8 /* MembersTableViewCell.swift */,
+				49270368202F899A00C291A8 /* MembersTableViewCell.xib */,
+				4927036B202F8F0300C291A8 /* MemberLoginViewController.swift */,
+				4927036D20301D1A00C291A8 /* MembersTableViewController.swift */,
+				496F74612034D81B001951CE /* MemberCellModel.swift */,
+				496F74632034E3D2001951CE /* MemberDetailViewController.swift */,
 			);
 			path = stfab4;
+			sourceTree = "<group>";
+		};
+		4DEB43A9AE3AE0F872DA5A68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				719A56914FFF5A81E8D087C5 /* Pods-stfab4.debug.xcconfig */,
+				6B8708DAFF15783E1B863257 /* Pods-stfab4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B1D75100E816B48F40C0231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8E547F7B07724F757A3C5 /* Pods_stfab4.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49270362202F408F00C291A8 /* Build configuration list for PBXNativeTarget "stfab4" */;
 			buildPhases = (
+				FE50E35ADEE3612A9E399133 /* [CP] Check Pods Manifest.lock */,
 				4927034C202F408E00C291A8 /* Sources */,
 				4927034D202F408E00C291A8 /* Frameworks */,
 				4927034E202F408E00C291A8 /* Resources */,
+				9C437D9288F5845E5ECF6004 /* [CP] Embed Pods Frameworks */,
+				09DD7C4F352C9DBB0D24805D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +171,78 @@
 				4927035E202F408F00C291A8 /* LaunchScreen.storyboard in Resources */,
 				4927035B202F408F00C291A8 /* Assets.xcassets in Resources */,
 				49270359202F408F00C291A8 /* Main.storyboard in Resources */,
+				4927036A202F899A00C291A8 /* MembersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09DD7C4F352C9DBB0D24805D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stfab4/Pods-stfab4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C437D9288F5845E5ECF6004 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stfab4/Pods-stfab4-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stfab4/Pods-stfab4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE50E35ADEE3612A9E399133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stfab4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4927034C202F408E00C291A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496F74622034D81B001951CE /* MemberCellModel.swift in Sources */,
+				49270369202F899A00C291A8 /* MembersTableViewCell.swift in Sources */,
 				49270356202F408F00C291A8 /* ViewController.swift in Sources */,
+				4927036C202F8F0300C291A8 /* MemberLoginViewController.swift in Sources */,
+				496F74642034E3D2001951CE /* MemberDetailViewController.swift in Sources */,
 				49270354202F408F00C291A8 /* AppDelegate.swift in Sources */,
+				4927036E20301D1B00C291A8 /* MembersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +377,13 @@
 		};
 		49270363202F408F00C291A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719A56914FFF5A81E8D087C5 /* Pods-stfab4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UGTE59LML;
 				INFOPLIST_FILE = stfab4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yaya.stfab4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +394,13 @@
 		};
 		49270364202F408F00C291A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B8708DAFF15783E1B863257 /* Pods-stfab4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UGTE59LML;
 				INFOPLIST_FILE = stfab4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yaya.stfab4;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MemberDetailViewController.viewDidLoad():MemberDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "member">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+            <PersistentString
+               value = "memberName">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController?.navigationBar.backItem?.backBarButtonItem?.tintColor">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController?.navigationItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MembersTableViewController.prepare(for:sender:):MembersTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "destination">
+            </PersistentString>
+            <PersistentString
+               value = "membersList[(self.tableView.indexPathForSelectedRow?.row)!]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MembersTableViewCell.setMemberTitle(title:):MembersTableViewCell.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
