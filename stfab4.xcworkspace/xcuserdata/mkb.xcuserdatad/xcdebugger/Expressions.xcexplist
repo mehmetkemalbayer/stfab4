@@ -3,6 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MembersTableViewCell.setMemberTitle(title:):MembersTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MembersTableViewController.prepare(for:sender:):MembersTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "destination">
+            </PersistentString>
+            <PersistentString
+               value = "membersList[(self.tableView.indexPathForSelectedRow?.row)!]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "MemberDetailViewController.viewDidLoad():MemberDetailViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -23,18 +37,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MembersTableViewController.prepare(for:sender:):MembersTableViewController.swift">
+         contextName = "MemberDetailViewController.addNewCar(car:):MemberDetailViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "destination">
-            </PersistentString>
-            <PersistentString
-               value = "membersList[(self.tableView.indexPathForSelectedRow?.row)!]">
+               value = "carsList">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MembersTableViewCell.setMemberTitle(title:):MembersTableViewCell.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

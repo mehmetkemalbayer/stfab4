@@ -18,7 +18,7 @@ class MembersTableViewController: UITableViewController {
         let nibi = UINib(nibName: "MembersTableViewCell", bundle: nil)
         self.tableView.register(nibi, forCellReuseIdentifier: "MembersTableViewCell")
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // self.navigationIte@objc @objc m.rightBarButtonItem = self.editButtonItem
         membersList.append(MemberCellModel.init(id: "1", memberTitle: "Mehmet Kemal Bayer", apartmentNumber: "6", state: false, carIn: "1", carTotal: "1"))
         membersList.append(MemberCellModel.init(id: "2", memberTitle: "Semih Bakır", apartmentNumber: "9", state: false, carIn: "1", carTotal: "1"))
         membersList.append(MemberCellModel.init(id: "3", memberTitle: "Mehmet İstanbulluoğlu", apartmentNumber: "59", state: false, carIn: "1", carTotal: "2"))
@@ -89,11 +89,16 @@ class MembersTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "MemberDetailSegue" ) {
-            let destination = segue.destination as! MemberDetailViewController
-            destination.member = membersList[(self.tableView.indexPathForSelectedRow?.row)!]
+            let tabCtrl: UITabBarController = segue.destination as! UITabBarController
+            let destinationVC = tabCtrl.viewControllers![0] as! MemberDetailViewController
+            destinationVC.member = membersList[(self.tableView.indexPathForSelectedRow?.row)!]
+            destinationVC.carsList.append(CarCellModel(licensePlate: "34VR1024", driversName: "Mehmet Kemal Bayer"))
+            destinationVC.carsList.append(CarCellModel(licensePlate: "34BRF982", driversName: "Berfu Bayer"))
             let backItem = UIBarButtonItem()
-            backItem.title = "Geri"
+            backItem.title = ""
+            
             navigationItem.backBarButtonItem = backItem
+            
         }
     }
     

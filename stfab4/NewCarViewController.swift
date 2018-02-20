@@ -1,23 +1,20 @@
 //
-//  MemberLoginViewController.swift
+//  NewCarViewController.swift
 //  stfab4
 //
-//  Created by MKB on 10/02/2018.
+//  Created by MKB on 15/02/2018.
 //  Copyright © 2018 MKB. All rights reserved.
 //
 
 import UIKit
 
-class MemberLoginViewController: UIViewController {
-    @IBOutlet var userName: UITextField!
-    
-    @IBOutlet var password: UITextField!
-    @IBAction func loginPressed(_ sender: Any) {
-        performSegue(withIdentifier: "LoginToMainSecreen", sender: self)
-    }
+class NewCarViewController: UIViewController {
+    var addNewCarDelegate:AddNewCarDelegate?
+    @IBOutlet var driversName: UITextField!
+    @IBOutlet var licensePlate: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.title = "Yeni Araç"
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +23,13 @@ class MemberLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func saveNewCar(_ sender: Any) {
+        let newCar:CarCellModel = CarCellModel(licensePlate: self.licensePlate.text!, driversName: self.driversName.text!)
+        addNewCarDelegate?.addNewCar(car: newCar)
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -37,4 +40,7 @@ class MemberLoginViewController: UIViewController {
     }
     */
 
+}
+protocol AddNewCarDelegate {
+    func addNewCar(car:CarCellModel)
 }
